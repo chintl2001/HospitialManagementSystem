@@ -9,81 +9,81 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = HospitialManagementSystem
 build_property.RootNamespace = HospitialManagementSystem
-build_property.ProjectDir = C:\Users\Admin\Desktop\HospitialManagementSystem\HospitialManagementSystem\
+build_property.ProjectDir = C:\LearnFPT\Term_7\SWD392\HospitialManagementSystem\HospitialManagementSystem\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Admin\Desktop\HospitialManagementSystem\HospitialManagementSystem
+build_property.MSBuildProjectDirectory = C:\LearnFPT\Term_7\SWD392\HospitialManagementSystem\HospitialManagementSystem
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Admin/Desktop/HospitialManagementSystem/HospitialManagementSystem/Pages/Authentication/Login.cshtml]
+[C:/LearnFPT/Term_7/SWD392/HospitialManagementSystem/HospitialManagementSystem/Pages/Authentication/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aGVudGljYXRpb25cTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Desktop/HospitialManagementSystem/HospitialManagementSystem/Pages/Authentication/User_Management/Create.cshtml]
+[C:/LearnFPT/Term_7/SWD392/HospitialManagementSystem/HospitialManagementSystem/Pages/Authentication/User_Management/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aGVudGljYXRpb25cVXNlcl9NYW5hZ2VtZW50XENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Desktop/HospitialManagementSystem/HospitialManagementSystem/Pages/Authentication/User_Management/Delete.cshtml]
+[C:/LearnFPT/Term_7/SWD392/HospitialManagementSystem/HospitialManagementSystem/Pages/Authentication/User_Management/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aGVudGljYXRpb25cVXNlcl9NYW5hZ2VtZW50XERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Desktop/HospitialManagementSystem/HospitialManagementSystem/Pages/Authentication/User_Management/Details.cshtml]
+[C:/LearnFPT/Term_7/SWD392/HospitialManagementSystem/HospitialManagementSystem/Pages/Authentication/User_Management/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aGVudGljYXRpb25cVXNlcl9NYW5hZ2VtZW50XERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Desktop/HospitialManagementSystem/HospitialManagementSystem/Pages/Authentication/User_Management/Edit.cshtml]
+[C:/LearnFPT/Term_7/SWD392/HospitialManagementSystem/HospitialManagementSystem/Pages/Authentication/User_Management/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aGVudGljYXRpb25cVXNlcl9NYW5hZ2VtZW50XEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Desktop/HospitialManagementSystem/HospitialManagementSystem/Pages/Authentication/User_Management/Index.cshtml]
+[C:/LearnFPT/Term_7/SWD392/HospitialManagementSystem/HospitialManagementSystem/Pages/Authentication/User_Management/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aGVudGljYXRpb25cVXNlcl9NYW5hZ2VtZW50XEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Desktop/HospitialManagementSystem/HospitialManagementSystem/Pages/Error.cshtml]
+[C:/LearnFPT/Term_7/SWD392/HospitialManagementSystem/HospitialManagementSystem/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Desktop/HospitialManagementSystem/HospitialManagementSystem/Pages/Index.cshtml]
+[C:/LearnFPT/Term_7/SWD392/HospitialManagementSystem/HospitialManagementSystem/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Desktop/HospitialManagementSystem/HospitialManagementSystem/Pages/Medicines/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVkaWNpbmVzXENyZWF0ZS5jc2h0bWw=
+[C:/LearnFPT/Term_7/SWD392/HospitialManagementSystem/HospitialManagementSystem/Pages/Inventory/Medicines_Management/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW52ZW50b3J5XE1lZGljaW5lc19NYW5hZ2VtZW50XENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Desktop/HospitialManagementSystem/HospitialManagementSystem/Pages/Medicines/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVkaWNpbmVzXERlbGV0ZS5jc2h0bWw=
+[C:/LearnFPT/Term_7/SWD392/HospitialManagementSystem/HospitialManagementSystem/Pages/Inventory/Medicines_Management/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW52ZW50b3J5XE1lZGljaW5lc19NYW5hZ2VtZW50XERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Desktop/HospitialManagementSystem/HospitialManagementSystem/Pages/Medicines/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVkaWNpbmVzXERldGFpbHMuY3NodG1s
+[C:/LearnFPT/Term_7/SWD392/HospitialManagementSystem/HospitialManagementSystem/Pages/Inventory/Medicines_Management/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW52ZW50b3J5XE1lZGljaW5lc19NYW5hZ2VtZW50XERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Desktop/HospitialManagementSystem/HospitialManagementSystem/Pages/Medicines/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVkaWNpbmVzXEVkaXQuY3NodG1s
+[C:/LearnFPT/Term_7/SWD392/HospitialManagementSystem/HospitialManagementSystem/Pages/Inventory/Medicines_Management/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW52ZW50b3J5XE1lZGljaW5lc19NYW5hZ2VtZW50XEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Desktop/HospitialManagementSystem/HospitialManagementSystem/Pages/Medicines/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVkaWNpbmVzXEluZGV4LmNzaHRtbA==
+[C:/LearnFPT/Term_7/SWD392/HospitialManagementSystem/HospitialManagementSystem/Pages/Inventory/Medicines_Management/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW52ZW50b3J5XE1lZGljaW5lc19NYW5hZ2VtZW50XEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Desktop/HospitialManagementSystem/HospitialManagementSystem/Pages/Privacy.cshtml]
+[C:/LearnFPT/Term_7/SWD392/HospitialManagementSystem/HospitialManagementSystem/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Desktop/HospitialManagementSystem/HospitialManagementSystem/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[C:/LearnFPT/Term_7/SWD392/HospitialManagementSystem/HospitialManagementSystem/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Desktop/HospitialManagementSystem/HospitialManagementSystem/Pages/_ViewImports.cshtml]
+[C:/LearnFPT/Term_7/SWD392/HospitialManagementSystem/HospitialManagementSystem/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Desktop/HospitialManagementSystem/HospitialManagementSystem/Pages/_ViewStart.cshtml]
+[C:/LearnFPT/Term_7/SWD392/HospitialManagementSystem/HospitialManagementSystem/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Desktop/HospitialManagementSystem/HospitialManagementSystem/Pages/Shared/_Layout.cshtml]
+[C:/LearnFPT/Term_7/SWD392/HospitialManagementSystem/HospitialManagementSystem/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-lkdkbgwodj
