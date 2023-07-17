@@ -1,18 +1,31 @@
-﻿<!DOCTYPE html>
+﻿@using HospitialManagementSystem.Models
+@using Microsoft.AspNetCore.Http;
+@using Newtonsoft.Json;
+
+@{
+    User user = null;
+    if (Context.Session.GetString("user") != null)
+    {
+        string json = Context.Session.GetString("user");
+        user = JsonConvert.DeserializeObject<User>(json);
+    }
+}
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - HospitialManagementSystem</title>
+    <title>@ViewData["Title"] - HopitalManagement</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/HospitialManagementSystem.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/HotelManagement.styles.css" asp-append-version="true" />
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-dark border-bottom box-shadow mb-3">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-page="/Index">HospitialManagementSystem</a>
+                <a class="navbar-brand" asp-area="" asp-page="/Index" style="color:white; font-size: 35px; font-weight: bolder; margin-left: -50px">Hopistal Management</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -20,13 +33,40 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
+                            <a class="nav-link text-light" style="font-size: 20px" asp-area="" asp-page="/Booking/Index">Orders</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
+                            <a class="nav-link text-light" style="font-size: 20px" asp-area="" asp-page="/Privacy">Bills</a>
                         </li>
                     </ul>
                 </div>
+                @if (user == null)
+                {
+                    <div class="justify-content-end">
+                        <button type="button" class="btn btn-primary"><a asp-area="" asp-page="/Authentication/Login" style="color:white; text-decoration:none" title="Login page">Login</a></button>
+                        <button type="button" class="btn btn-primary"><a asp-area="" asp-page="/AccessPage/Register" style="color:white; text-decoration:none" title="Register page">Register</a></button>
+                    </div>
+                }
+                else
+                {
+                    <div class="justify-content-end">
+                        <div class="dropdown justify-content-end">
+                            <a class="nav-link text-light dropdown-toggle" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Hello, @user.Username!
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
+                                <li><a class="dropdown-item" asp-area="" asp-page="/Bookings/Index" title="Bookings">Profile</a></li>
+                                @if (user.UserId == 1)
+                                {
+                                    <li><a class="dropdown-item" asp-area="" asp-page="/Orders/Index" title="Orders management">Orders Management</a></li>
+                                    <li><a class="dropdown-item" asp-area="" asp-page="/Authentication/User_Management/Index" title="Users management">Users Management</a></li>
+                                }
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" asp-area="" asp-page="/Authentication/Login" asp-page-handler="Logout" title="Log out hotel">Log out</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                }
             </div>
         </nav>
     </header>
@@ -38,7 +78,7 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2023 - HospitialManagementSystem - <a asp-area="" asp-page="/Privacy">Privacy</a>
+            &copy; 2023 - Hopital Management
         </div>
     </footer>
 
