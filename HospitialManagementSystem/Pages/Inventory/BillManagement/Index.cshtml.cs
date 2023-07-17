@@ -20,15 +20,34 @@ namespace HospitialManagementSystem.Pages.Inventory.BillManagement
 
 		public IList<Bill> Bill { get; set; } = default!;
 
-		public async Task OnGetAsync(int id)
-		{
-			if (_context.Bills != null)
-			{
-				Bill = await _context.Bills.Where(x => x.Id == id)
-				.Include(b => b.Medicine)
-				.Include(b => b.Patient)
-				.Include(b => b.Status).ToListAsync();
-			}
-		}
-	}
+        public async Task OnGetAsync()
+        {
+            await LoadAllBillsAsync();
+        }
+        public async Task OnPostSearchAsync(int id)
+        {
+            if (id > 0)
+            {
+                Bill = await _context.Bills
+                    .Where(x => x.Id == id)
+                    .Include(b => b.Medicine)
+                    .Include(b => b.Patient)
+                    .Include(b => b.Status)
+                    .ToListAsync();
+            }
+            else
+            {
+                await LoadAllBillsAsync();
+            }
+        }
+
+        private async Task LoadAllBillsAsync()
+        {
+            Bill = await _context.Bills
+                .Include(b => b.Medicine)
+                .Include(b => b.Patient)
+                .Include(b => b.Status)
+                .ToListAsync();
+        }
+    }
 }
