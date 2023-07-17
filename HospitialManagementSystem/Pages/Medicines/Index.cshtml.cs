@@ -17,15 +17,21 @@ namespace HospitialManagementSystem.Pages.Medicines
         {
             _context = context;
         }
-
+        public string CurrentFilter { get; set; }
         public IList<Medicine> Medicine { get;set; } = default!;
 
-        public async Task OnGetAsync()
+        public async Task OnGetAsync(string searchString)
         {
             if (_context.Medicines != null)
             {
+                var qr = from a in _context.Medicines select a;
                 Medicine = await _context.Medicines.ToListAsync();
-            }
-        }
+
+                //search
+                if (!String.IsNullOrEmpty(searchString))
+                {
+                    Medicine = qr.Where(s => s.Name.Contains(searchString) || s.Description.Contains(searchString)).ToList();
+                }
+                //
     }
 }
