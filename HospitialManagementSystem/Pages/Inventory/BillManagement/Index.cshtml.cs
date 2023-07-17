@@ -9,26 +9,26 @@ using HospitialManagementSystem.Models;
 
 namespace HospitialManagementSystem.Pages.Inventory.BillManagement
 {
-    public class IndexModel : PageModel
-    {
-        private readonly HospitialManagementSystem.Models.SWD_ProjectContext _context;
+	public class IndexModel : PageModel
+	{
+		private readonly HospitialManagementSystem.Models.SWD_ProjectContext _context;
 
-        public IndexModel(HospitialManagementSystem.Models.SWD_ProjectContext context)
-        {
-            _context = context;
-        }
+		public IndexModel(HospitialManagementSystem.Models.SWD_ProjectContext context)
+		{
+			_context = context;
+		}
 
-        public IList<Bill> Bill { get;set; } = default!;
+		public IList<Bill> Bill { get; set; } = default!;
 
-        public async Task OnGetAsync()
-        {
-            if (_context.Bills != null)
-            {
-                Bill = await _context.Bills
-                .Include(b => b.Medicine)
-                .Include(b => b.Patient)
-                .Include(b => b.Status).ToListAsync();
-            }
-        }
-    }
+		public async Task OnGetAsync(int id)
+		{
+			if (_context.Bills != null)
+			{
+				Bill = await _context.Bills.Where(x => x.Id == id)
+				.Include(b => b.Medicine)
+				.Include(b => b.Patient)
+				.Include(b => b.Status).ToListAsync();
+			}
+		}
+	}
 }
