@@ -1,10 +1,13 @@
 using HospitialManagementSystem.Models;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
-builder.Services.AddDbContext<SWD_ProjectContext>();
+builder.Services.AddDbContext<SWD_ProjectContext>(
+    options => options.UseSqlServer(builder.Configuration.GetConnectionString("SWD_ProjectContext"))
+    );
 builder.Services.AddSession();
 
 var app = builder.Build();
