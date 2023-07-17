@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using HospitialManagementSystem.Models;
 
-namespace HospitialManagementSystem.Pages.Medicines
+namespace HospitialManagementSystem.Pages.Inventory.Medicines_Management
 {
     public class EditModel : PageModel
     {
