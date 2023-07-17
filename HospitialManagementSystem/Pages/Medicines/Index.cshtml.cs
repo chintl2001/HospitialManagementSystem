@@ -33,7 +33,5 @@ namespace HospitialManagementSystem.Pages.Medicines
                     Medicine = qr.Where(s => s.Name.Contains(searchString) || s.Description.Contains(searchString)).ToList();
                 }
                 //
-            }
-        }
     }
 }

@@ -30,11 +30,6 @@ namespace HospitialManagementSystem.Pages.Medicines
         // To protect from overposting attacks, see https://aka.ms/RazorPagesCRUD
         public async Task<IActionResult> OnPostAsync()
         {
-          if (!ModelState.IsValid || _context.Medicines == null || Medicine == null)
-            {
-                return Page();
-            }
-
             _context.Medicines.Add(Medicine);
             await _context.SaveChangesAsync();
 
