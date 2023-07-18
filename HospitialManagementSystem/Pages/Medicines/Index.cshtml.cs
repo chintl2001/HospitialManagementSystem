@@ -18,7 +18,7 @@ namespace HospitialManagementSystem.Pages.Medicines
             _context = context;
         }
         public string CurrentFilter { get; set; }
-        public IList<Medicine> Medicine { get;set; } = default!;
+        public IList<Medicine> Medicine { get; set; } = default!;
 
         public async Task OnGetAsync(string searchString)
         {
@@ -33,5 +33,8 @@ namespace HospitialManagementSystem.Pages.Medicines
                     Medicine = qr.Where(s => s.Name.Contains(searchString) || s.Description.Contains(searchString)).ToList();
                 }
                 //
+            }
+        }
     }
 }
+

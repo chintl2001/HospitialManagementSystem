@@ -38,7 +38,7 @@ namespace HospitialManagementSystem.Models
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-                optionsBuilder.UseSqlServer("Server=(local);Database=SWD_Project;Trusted_Connection=True;Integrated Security=true;TrustServerCertificate=True");
+                optionsBuilder.UseSqlServer("Server=(local);Database=SWD_Project;uid=sa;pwd=sa;");
             }
         }
 
@@ -48,9 +48,7 @@ namespace HospitialManagementSystem.Models
             {
                 entity.ToTable("Bill");
 
-                entity.Property(e => e.Id)
-                    .ValueGeneratedNever()
-                    .HasColumnName("id");
+                entity.Property(e => e.Id).HasColumnName("id");
 
                 entity.Property(e => e.CreatedDate)
                     .HasColumnType("date")
@@ -92,9 +90,7 @@ namespace HospitialManagementSystem.Models
             {
                 entity.ToTable("Category");
 
-                entity.Property(e => e.CategoryId)
-                    .ValueGeneratedNever()
-                    .HasColumnName("category_id");
+                entity.Property(e => e.CategoryId).HasColumnName("category_id");
 
                 entity.Property(e => e.Name)
                     .HasMaxLength(50)
@@ -105,9 +101,7 @@ namespace HospitialManagementSystem.Models
             {
                 entity.ToTable("Customer");
 
-                entity.Property(e => e.Id)
-                    .ValueGeneratedNever()
-                    .HasColumnName("id");
+                entity.Property(e => e.Id).HasColumnName("id");
 
                 entity.Property(e => e.Adress)
                     .HasMaxLength(50)
@@ -126,9 +120,7 @@ namespace HospitialManagementSystem.Models
             {
                 entity.ToTable("Inventory");
 
-                entity.Property(e => e.InventoryId)
-                    .ValueGeneratedNever()
-                    .HasColumnName("inventory_id");
+                entity.Property(e => e.InventoryId).HasColumnName("inventory_id");
 
                 entity.Property(e => e.Location)
                     .HasMaxLength(50)
@@ -143,9 +135,7 @@ namespace HospitialManagementSystem.Models
             {
                 entity.ToTable("Medicine");
 
-                entity.Property(e => e.Id)
-                    .ValueGeneratedNever()
-                    .HasColumnName("id");
+                entity.Property(e => e.Id).HasColumnName("id");
 
                 entity.Property(e => e.Description)
                     .HasMaxLength(50)
@@ -162,9 +152,7 @@ namespace HospitialManagementSystem.Models
             {
                 entity.ToTable("Order");
 
-                entity.Property(e => e.Id)
-                    .ValueGeneratedNever()
-                    .HasColumnName("id");
+                entity.Property(e => e.Id).HasColumnName("id");
 
                 entity.Property(e => e.OrderDetailsId).HasColumnName("order_details_id");
 
@@ -188,9 +176,7 @@ namespace HospitialManagementSystem.Models
 
             modelBuilder.Entity<OrderDetail>(entity =>
             {
-                entity.Property(e => e.Id)
-                    .ValueGeneratedNever()
-                    .HasColumnName("id");
+                entity.Property(e => e.Id).HasColumnName("id");
 
                 entity.Property(e => e.CustomerId).HasColumnName("customer_id");
 
@@ -221,9 +207,7 @@ namespace HospitialManagementSystem.Models
             {
                 entity.ToTable("OrderStatus");
 
-                entity.Property(e => e.Id)
-                    .ValueGeneratedNever()
-                    .HasColumnName("id");
+                entity.Property(e => e.Id).HasColumnName("id");
 
                 entity.Property(e => e.Status)
                     .HasMaxLength(50)
@@ -234,9 +218,7 @@ namespace HospitialManagementSystem.Models
             {
                 entity.ToTable("Patient");
 
-                entity.Property(e => e.PatientId)
-                    .ValueGeneratedNever()
-                    .HasColumnName("patient_id");
+                entity.Property(e => e.PatientId).HasColumnName("patient_id");
 
                 entity.Property(e => e.Address)
                     .HasMaxLength(50)
@@ -263,9 +245,7 @@ namespace HospitialManagementSystem.Models
             {
                 entity.ToTable("Permission");
 
-                entity.Property(e => e.PermissionId)
-                    .ValueGeneratedNever()
-                    .HasColumnName("permission_id");
+                entity.Property(e => e.PermissionId).HasColumnName("permission_id");
 
                 entity.Property(e => e.PermissionName)
                     .HasMaxLength(50)
@@ -276,9 +256,7 @@ namespace HospitialManagementSystem.Models
             {
                 entity.ToTable("Product");
 
-                entity.Property(e => e.ProductId)
-                    .ValueGeneratedNever()
-                    .HasColumnName("product_id");
+                entity.Property(e => e.ProductId).HasColumnName("product_id");
 
                 entity.Property(e => e.CategoryId).HasColumnName("category_id");
 
@@ -314,9 +292,7 @@ namespace HospitialManagementSystem.Models
             {
                 entity.ToTable("Role");
 
-                entity.Property(e => e.RoleId)
-                    .ValueGeneratedNever()
-                    .HasColumnName("role_id");
+                entity.Property(e => e.RoleId).HasColumnName("role_id");
 
                 entity.Property(e => e.RoleName)
                     .HasMaxLength(50)
@@ -327,9 +303,7 @@ namespace HospitialManagementSystem.Models
             {
                 entity.ToTable("Role_Permission");
 
-                entity.Property(e => e.RolePermissionId)
-                    .ValueGeneratedNever()
-                    .HasColumnName("role_permission_id");
+                entity.Property(e => e.RolePermissionId).HasColumnName("role_permission_id");
 
                 entity.Property(e => e.PermissionId).HasColumnName("permission_id");
 
@@ -350,9 +324,7 @@ namespace HospitialManagementSystem.Models
             {
                 entity.ToTable("Status");
 
-                entity.Property(e => e.Id)
-                    .ValueGeneratedNever()
-                    .HasColumnName("id");
+                entity.Property(e => e.Id).HasColumnName("id");
 
                 entity.Property(e => e.Status1)
                     .HasMaxLength(50)
@@ -363,9 +335,7 @@ namespace HospitialManagementSystem.Models
             {
                 entity.ToTable("Supplier");
 
-                entity.Property(e => e.SupplierId)
-                    .ValueGeneratedNever()
-                    .HasColumnName("supplier_id");
+                entity.Property(e => e.SupplierId).HasColumnName("supplier_id");
 
                 entity.Property(e => e.Address)
                     .HasMaxLength(50)
@@ -384,9 +354,7 @@ namespace HospitialManagementSystem.Models
             {
                 entity.ToTable("User");
 
-                entity.Property(e => e.UserId)
-                    .ValueGeneratedNever()
-                    .HasColumnName("user_id");
+                entity.Property(e => e.UserId).HasColumnName("user_id");
 
                 entity.Property(e => e.Firstname)
                     .HasMaxLength(50)
