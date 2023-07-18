@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using HospitialManagementSystem.Models;
 
-namespace HospitialManagementSystem.Pages.Medicines
+namespace HospitialManagementSystem.Pages.Inventory.Medicines_Management
 {
     public class DetailsModel : PageModel
     {

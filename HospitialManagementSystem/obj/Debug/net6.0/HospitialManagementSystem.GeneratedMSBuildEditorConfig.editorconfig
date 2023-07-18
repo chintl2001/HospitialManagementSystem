@@ -68,24 +68,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hatda/OneDrive/Máy tính/SWD_Project/HospitialManagementSystem/HospitialManagementSystem/Pages/Medicines/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVkaWNpbmVzXENyZWF0ZS5jc2h0bWw=
+[C:/Users/hatda/OneDrive/Máy tính/SWD_Project/HospitialManagementSystem/HospitialManagementSystem/Pages/Inventory/Medicines_Management/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW52ZW50b3J5XE1lZGljaW5lc19NYW5hZ2VtZW50XENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hatda/OneDrive/Máy tính/SWD_Project/HospitialManagementSystem/HospitialManagementSystem/Pages/Medicines/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVkaWNpbmVzXERlbGV0ZS5jc2h0bWw=
+[C:/Users/hatda/OneDrive/Máy tính/SWD_Project/HospitialManagementSystem/HospitialManagementSystem/Pages/Inventory/Medicines_Management/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW52ZW50b3J5XE1lZGljaW5lc19NYW5hZ2VtZW50XERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hatda/OneDrive/Máy tính/SWD_Project/HospitialManagementSystem/HospitialManagementSystem/Pages/Medicines/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVkaWNpbmVzXERldGFpbHMuY3NodG1s
+[C:/Users/hatda/OneDrive/Máy tính/SWD_Project/HospitialManagementSystem/HospitialManagementSystem/Pages/Inventory/Medicines_Management/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW52ZW50b3J5XE1lZGljaW5lc19NYW5hZ2VtZW50XERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hatda/OneDrive/Máy tính/SWD_Project/HospitialManagementSystem/HospitialManagementSystem/Pages/Medicines/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVkaWNpbmVzXEVkaXQuY3NodG1s
+[C:/Users/hatda/OneDrive/Máy tính/SWD_Project/HospitialManagementSystem/HospitialManagementSystem/Pages/Inventory/Medicines_Management/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW52ZW50b3J5XE1lZGljaW5lc19NYW5hZ2VtZW50XEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hatda/OneDrive/Máy tính/SWD_Project/HospitialManagementSystem/HospitialManagementSystem/Pages/Medicines/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVkaWNpbmVzXEluZGV4LmNzaHRtbA==
+[C:/Users/hatda/OneDrive/Máy tính/SWD_Project/HospitialManagementSystem/HospitialManagementSystem/Pages/Inventory/Medicines_Management/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW52ZW50b3J5XE1lZGljaW5lc19NYW5hZ2VtZW50XEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/hatda/OneDrive/Máy tính/SWD_Project/HospitialManagementSystem/HospitialManagementSystem/Pages/Privacy.cshtml]
